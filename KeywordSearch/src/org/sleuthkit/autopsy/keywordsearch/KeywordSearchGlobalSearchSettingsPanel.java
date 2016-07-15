@@ -34,7 +34,7 @@ import org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule.UpdateFrequ
 class KeywordSearchGlobalSearchSettingsPanel extends javax.swing.JPanel implements OptionsPanel {
 
     private final Logger logger = Logger.getLogger(KeywordSearchGlobalSearchSettingsPanel.class.getName());
-    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
+//    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
     /**
      * Creates new form KeywordSearchConfigurationPanel2
@@ -76,15 +76,15 @@ class KeywordSearchGlobalSearchSettingsPanel extends javax.swing.JPanel implemen
         }
     }
 
-    @Override
-    public void addPropertyChangeListener(PropertyChangeListener l) {
-        pcs.addPropertyChangeListener(l);
-    }
-
-    @Override
-    public void removePropertyChangeListener(PropertyChangeListener l) {
-        pcs.removePropertyChangeListener(l);
-    }
+//    @Override
+//    public void addPropertyChangeListener(PropertyChangeListener l) {
+//        pcs.addPropertyChangeListener(l);
+//    }
+//
+//    @Override
+//    public void removePropertyChangeListener(PropertyChangeListener l) {
+//        pcs.removePropertyChangeListener(l);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -262,31 +262,31 @@ class KeywordSearchGlobalSearchSettingsPanel extends javax.swing.JPanel implemen
     }// </editor-fold>//GEN-END:initComponents
 
     private void timeRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton5ActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton5ActionPerformed
 
     private void skipNSRLCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipNSRLCheckBoxActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_skipNSRLCheckBoxActionPerformed
 
     private void showSnippetsCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showSnippetsCBActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_showSnippetsCBActionPerformed
 
     private void timeRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton1ActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton1ActionPerformed
 
     private void timeRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton2ActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton2ActionPerformed
 
     private void timeRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton3ActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton3ActionPerformed
 
     private void timeRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton4ActionPerformed
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

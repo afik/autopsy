@@ -74,7 +74,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
     // modules obtained and shared a per data source ingest job snapshot of the
     // file type definitions.
     IngestJobEventPropertyChangeListener ingestJobEventsListener;
-    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
+//    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
     /**
      * Creates a panel to allow a user to make custom file type definitions.
@@ -100,15 +100,15 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
         populateTypeDetailsComponents();
     }
 
-    @Override
-    public void addPropertyChangeListener(PropertyChangeListener l) {
-        pcs.addPropertyChangeListener(l);
-    }
-
-    @Override
-    public void removePropertyChangeListener(PropertyChangeListener l) {
-        pcs.removePropertyChangeListener(l);
-    }
+//    @Override
+//    public void addPropertyChangeListener(PropertyChangeListener l) {
+//        pcs.addPropertyChangeListener(l);
+//    }
+//
+//    @Override
+//    public void removePropertyChangeListener(PropertyChangeListener l) {
+//        pcs.removePropertyChangeListener(l);
+//    }
 
     /**
      * Sets the list model for the list of file types.
@@ -501,7 +501,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
         if (result == AddFileTypeDialog.BUTTON_PRESSED.OK) {
             fileTypes.add(dialog.getFileType());
             updateFileTypesListModel();
-            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         }
 
     }//GEN-LAST:event_newTypeButtonActionPerformed
@@ -513,7 +513,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
         if (!typesListModel.isEmpty()) {
             typesList.setSelectedIndex(0);
         }
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_deleteTypeButtonActionPerformed
 
     private void editTypeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editTypeButtonActionPerformed
@@ -524,7 +524,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
             this.fileTypes.remove(selected);
             this.fileTypes.add(selected, dialog.getFileType());
             updateFileTypesListModel();
-            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         }
     }//GEN-LAST:event_editTypeButtonActionPerformed
 

@@ -42,7 +42,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
     private final Map<String, StringExtract.StringExtractUnicodeTable.SCRIPT> scripts = new HashMap<>();
     private ActionListener updateLanguagesAction;
     private List<SCRIPT> toUpdate;
-    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
+//    private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
     KeywordSearchGlobalLanguageSettingsPanel() {
         initComponents();
@@ -69,15 +69,15 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
         reloadScriptsCheckBoxes();
     }
 
-    @Override
-    public void addPropertyChangeListener(PropertyChangeListener l) {
-        pcs.addPropertyChangeListener(l);
-    }
-
-    @Override
-    public void removePropertyChangeListener(PropertyChangeListener l) {
-        pcs.removePropertyChangeListener(l);
-    }
+//    @Override
+//    public void addPropertyChangeListener(PropertyChangeListener l) {
+//        pcs.addPropertyChangeListener(l);
+//    }
+//
+//    @Override
+//    public void removePropertyChangeListener(PropertyChangeListener l) {
+//        pcs.removePropertyChangeListener(l);
+//    }
 
     private void activateScriptsCheckboxes(boolean activate) {
         final int components = checkPanel.getComponentCount();
@@ -104,7 +104,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
             ch.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//                    pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
                 }
             });
             ch.addActionListener(updateLanguagesAction);
@@ -247,7 +247,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
         boolean selected = this.enableUTF8Checkbox.isSelected();
 
         activateScriptsCheckboxes(selected || this.enableUTF16Checkbox.isSelected());
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 
     }//GEN-LAST:event_enableUTF8CheckboxActionPerformed
 
@@ -256,7 +256,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
         boolean selected = this.enableUTF16Checkbox.isSelected();
 
         activateScriptsCheckboxes(selected || this.enableUTF8Checkbox.isSelected());
-        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
+//        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_enableUTF16CheckboxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

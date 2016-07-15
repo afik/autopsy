@@ -51,19 +51,19 @@ final class KeywordSearchGlobalSettingsPanel extends IngestModuleGlobalSettingsP
                 generalPanel, NbBundle.getMessage(this.getClass(), "KeywordSearchConfigurationPanel.customizeComponents.genTabToolTip"), 2);
     }
 
-    @Override
-    public void addPropertyChangeListener(PropertyChangeListener l) {
-        listsPanel.addPropertyChangeListener(l);
-        languagesPanel.addPropertyChangeListener(l);
-        generalPanel.addPropertyChangeListener(l);
-    }
-
-    @Override
-    public void removePropertyChangeListener(PropertyChangeListener l) {
-        listsPanel.removePropertyChangeListener(l);
-        languagesPanel.removePropertyChangeListener(l);
-        generalPanel.removePropertyChangeListener(l);
-    }
+//    @Override
+//    public void addPropertyChangeListener(PropertyChangeListener l) {
+//        listsPanel.addPropertyChangeListener(l);
+//        languagesPanel.addPropertyChangeListener(l);
+//        generalPanel.addPropertyChangeListener(l);
+//    }
+//
+//    @Override
+//    public void removePropertyChangeListener(PropertyChangeListener l) {
+//        listsPanel.removePropertyChangeListener(l);
+//        languagesPanel.removePropertyChangeListener(l);
+//        generalPanel.removePropertyChangeListener(l);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
