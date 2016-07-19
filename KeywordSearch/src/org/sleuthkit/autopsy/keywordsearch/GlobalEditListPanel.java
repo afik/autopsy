@@ -453,6 +453,7 @@ class GlobalEditListPanel extends javax.swing.JPanel implements ListSelectionLis
         XmlKeywordSearchList.getCurrent().addList(currentKeywordList);
         chRegex.setSelected(false);
         addWordField.setText("");
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         setFocusOnKeywordTextBox();
         setButtonStates();
@@ -464,6 +465,7 @@ class GlobalEditListPanel extends javax.swing.JPanel implements ListSelectionLis
             tableModel.deleteSelected(keywordTable.getSelectedRows());
             XmlKeywordSearchList.getCurrent().addList(currentKeywordList);
             setButtonStates();
+            this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         }
     }//GEN-LAST:event_deleteWordButtonActionPerformed
@@ -527,10 +529,12 @@ class GlobalEditListPanel extends javax.swing.JPanel implements ListSelectionLis
         currentKeywordList.setIngestMessages(ingestMessagesCheckbox.isSelected());
         XmlKeywordSearchList updater = XmlKeywordSearchList.getCurrent();
         updater.addList(currentKeywordList);
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_ingestMessagesCheckboxActionPerformed
 
     private void deleteListButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteListButtonActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_deleteListButtonActionPerformed
 

@@ -221,6 +221,7 @@ class GlobalListsManagementPanel extends javax.swing.JPanel implements OptionsPa
                 listsTable.getSelectionModel().addSelectionInterval(i, i);
             }
         }
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         globalListSettingsPanel.setFocusOnKeywordTextBox();
     }//GEN-LAST:event_newListButtonActionPerformed
@@ -317,6 +318,7 @@ class GlobalListsManagementPanel extends javax.swing.JPanel implements OptionsPa
                 }
             }
         }
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_importButtonActionPerformed
     private void listsTableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_listsTableKeyPressed
@@ -327,6 +329,7 @@ class GlobalListsManagementPanel extends javax.swing.JPanel implements OptionsPa
             } else if (KeywordSearchUtil.displayConfirmDialog(NbBundle.getMessage(this.getClass(), "KeywordSearchConfigurationPanel1.customizeComponents.title"), NbBundle.getMessage(this.getClass(), "KeywordSearchConfigurationPanel1.customizeComponents.body"), KeywordSearchUtil.DIALOG_MESSAGE_TYPE.WARN)) {
                 String listName = (String) listsTable.getModel().getValueAt(selected[0], 0);
                 XmlKeywordSearchList.getCurrent().deleteList(listName);
+                this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //                pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
             } else {
                 return;

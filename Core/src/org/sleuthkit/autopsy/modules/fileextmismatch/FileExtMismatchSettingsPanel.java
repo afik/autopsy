@@ -394,6 +394,7 @@ final class FileExtMismatchSettingsPanel extends IngestModuleGlobalSettingsPanel
         updateExtList();
         extTableModel.resync();
         this.userExtTextField.setText("");
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_addExtButtonActionPerformed
 
@@ -442,6 +443,7 @@ final class FileExtMismatchSettingsPanel extends IngestModuleGlobalSettingsPanel
         mimeTableModel.resync();
         userTypeTextField.setText("");
         this.clearErrLabels();
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_addTypeButtonActionPerformed
 
@@ -467,6 +469,7 @@ final class FileExtMismatchSettingsPanel extends IngestModuleGlobalSettingsPanel
         // Refresh table
         updateMimeList();
         mimeTableModel.resync();
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_removeTypeButtonActionPerformed
 
@@ -495,6 +498,7 @@ final class FileExtMismatchSettingsPanel extends IngestModuleGlobalSettingsPanel
         // Refresh tables        
         updateExtList();
         extTableModel.resync();
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_removeExtButtonActionPerformed
 

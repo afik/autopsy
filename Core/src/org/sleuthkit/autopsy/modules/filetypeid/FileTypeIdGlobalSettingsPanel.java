@@ -501,6 +501,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
         if (result == AddFileTypeDialog.BUTTON_PRESSED.OK) {
             fileTypes.add(dialog.getFileType());
             updateFileTypesListModel();
+            this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         }
 
@@ -513,6 +514,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
         if (!typesListModel.isEmpty()) {
             typesList.setSelectedIndex(0);
         }
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_deleteTypeButtonActionPerformed
 
@@ -524,6 +526,7 @@ final class FileTypeIdGlobalSettingsPanel extends IngestModuleGlobalSettingsPane
             this.fileTypes.remove(selected);
             this.fileTypes.add(selected, dialog.getFileType());
             updateFileTypesListModel();
+            this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //            pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
         }
     }//GEN-LAST:event_editTypeButtonActionPerformed

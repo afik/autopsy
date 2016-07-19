@@ -262,30 +262,37 @@ class KeywordSearchGlobalSearchSettingsPanel extends javax.swing.JPanel implemen
     }// </editor-fold>//GEN-END:initComponents
 
     private void timeRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton5ActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton5ActionPerformed
 
     private void skipNSRLCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipNSRLCheckBoxActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_skipNSRLCheckBoxActionPerformed
 
     private void showSnippetsCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showSnippetsCBActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_showSnippetsCBActionPerformed
 
     private void timeRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton1ActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton1ActionPerformed
 
     private void timeRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton2ActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton2ActionPerformed
 
     private void timeRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton3ActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton3ActionPerformed
 
     private void timeRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRadioButton4ActionPerformed
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_timeRadioButton4ActionPerformed
 

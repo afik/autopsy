@@ -247,6 +247,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
         boolean selected = this.enableUTF8Checkbox.isSelected();
 
         activateScriptsCheckboxes(selected || this.enableUTF16Checkbox.isSelected());
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 
     }//GEN-LAST:event_enableUTF8CheckboxActionPerformed
@@ -256,6 +257,7 @@ class KeywordSearchGlobalLanguageSettingsPanel extends javax.swing.JPanel implem
         boolean selected = this.enableUTF16Checkbox.isSelected();
 
         activateScriptsCheckboxes(selected || this.enableUTF8Checkbox.isSelected());
+        this.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
 //        pcs.firePropertyChange(OptionsPanelController.PROP_CHANGED, null, null);
     }//GEN-LAST:event_enableUTF16CheckboxActionPerformed
 
